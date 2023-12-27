@@ -1,0 +1,60 @@
+.footer__logo {
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    background-color: #FFF9FE;
+    margin-top: 75px;
+}
+
+.footer__info {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.footer__info-contacts, .footer__info-shops, .footer__info-socials {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.contacts, .shops, .socials {
+    margin-bottom: 20px;
+    font-size: 24px
+}
+
+.phone, .mail, .adress{
+    margin-bottom:10px;
+}
+
+.footer__info-socials-icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 480px) {
+    .footer__logo-pic{
+        width: 200px;
+        height: 125px;
+        margin-bottom: 25px;
+    }
+
+    .footer__info {
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    .contacts, .shops, .socials  {
+        margin: 10px auto;
+    }
+
+    .phone, .mail, .adress {
+        margin: 5px auto;
+    }
+
+    .footer__info-socials-icons {
+        width: 300px;
+        margin: 5px auto
+    }
+}
