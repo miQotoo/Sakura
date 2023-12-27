@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakura</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/favourite.css">
+    <script src="js/header.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container container__header">
+            <input type="text" placeholder="Поиск товаров" class="header__search">
+            <div class="menu">
+                <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+                <label for="burger-checkbox" class="burger"></label>
+                <ul class="menu-list">
+                    <li>
+                        <a href="main.html" class="menu-item">Главная</a>
+                    </li>
+                    <li>
+                        <a href="login.html" class="menu-item">Вход \ Регистрация</a>
+                    </li>
+                    <li>
+                        <a href="#openModal" class="menu-item">Корзина</a>
+                    </li>
+                    <li>
+                        <a href="favourite.html" class="menu-item">Избранное</a>
+                    </li>
+                    <li>
+                        <a href="catalog.html" class="menu-item">Каталог товаров</a>
+                    </li>
+                </ul>
+            </div>
+            <a href="main.html" class="header__logo"><img src="img/sakura_logo.svg" alt="" class="header__logo-pic"></a>
+            <a href="catalog.html" class="header__link">Каталог товаров</a>
+            <ul class="header__menu">
+                <li class="header__menu-item">
+                    <a href="favourite.html" class="header__menu-link">
+                        <div class="header__menu-pic"> <img src="img/favorite_before.png" alt=""></div>
+                        <span class="header__menu-title">Избранное</span>
+                    </a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="#openModal" class="header__menu-link">
+                        <div class="header__menu-pic"> <img src="img/cart_icon.svg" alt=""></div>
+                        <span class="header__menu-title">Корзина</span>
+                    </a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="login.html" class="header__menu-link">
+                        <div class="header__menu-pic"> <img src="img/login_icon.svg" alt=""></div>
+                        <span class="header__menu-title">Вход/Регистрация</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <hr>
+            <div class="page-title">
+                <h1>Избранные товары</h1>
+            </div>
+            <hr>
+            <ul class="new">
+                <li class="items">
+                    <div class="items-border">
+                        <a href="product.html">
+                            <img class="new-item" src="img/new-item.svg" alt="">
+                            <span class="items-title">Цветы Сакуры маринованные, 500 г</span>   
+                        </a>
+                        <div class="items-price-container">
+                            <span class="items-price">5678 ₽</span>
+                        </div>
+                        <div class="item-buttons">
+                            <a href="" class="item__link-buy">В корзину</a>
+                            <a href="" class="item__link-favourite"><img src="img/favorite_after.png" alt=""></a>
+                        </div> 
+                    </div>
+                </li>
+                <li class="items">
+                    <div class="items-border">
+                        <a href="product.html">
+                            <img class="new-item" src="img/new-item.svg" alt="">
+                            <span class="items-title">Цветы Сакуры маринованные, 500 г</span>   
+                        </a>
+                        <div class="items-price-container">
+                            <span class="items-price">5678 ₽</span>
+                        </div>
+                        <div class="item-buttons">
+                            <a href="" class="item__link-buy">В корзину</a>
+                            <a href="" class="item__link-favourite"><img src="img/favorite_after.png" alt=""></a>
+                        </div> 
+                    </div>
+                </li>
+                <li class="items">
+                    <div class="items-border">
+                        <a href="product.html">
+                            <img class="new-item" src="img/new-item.svg" alt="">
+                            <span class="items-title">Цветы Сакуры маринованные, 500 г</span>   
+                        </a>
+                        <div class="items-price-container">
+                            <span class="items-price">5678 ₽</span>
+                        </div>
+                        <div class="item-buttons">
+                            <a href="" class="item__link-buy">В корзину</a>
+                            <a href="" class="item__link-favourite"><img src="img/favorite_after.png" alt=""></a>
+                        </div> 
+                    </div>
+                </li>
+                <li class="items">
+                    <div class="items-border">
+                        <a href="product.html">
+                            <img class="new-item" src="img/new-item.svg" alt="">
+                            <span class="items-title">Цветы Сакуры маринованные, 500 г</span>   
+                        </a>
+                        <div class="items-price-container">
+                            <span class="items-price">5678 ₽</span>
+                        </div>
+                        <div class="item-buttons">
+                            <a href="" class="item__link-buy">В корзину</a>
+                            <a href="" class="item__link-favourite"><img src="img/favorite_after.png" alt=""></a>
+                        </div> 
+                    </div>
+                </li>
+                <li class="items">
+                    <div class="items-border">
+                        <a href="product.html">
+                            <img class="new-item" src="img/new-item.svg" alt="">
+                            <span class="items-title">Цветы Сакуры маринованные, 500 г</span>   
+                        </a>
+                        <div class="items-price-container">
+                            <span class="items-price">5678 ₽</span>
+                        </div>
+                        <div class="item-buttons">
+                            <a href="" class="item__link-buy">В корзину</a>
+                            <a href="" class="item__link-favourite"><img src="img/favorite_after.png" alt=""></a>
+                        </div> 
+                    </div>
+                </li>
+            </ul>
+            <ul class="new">
+                <li class="items">
+                    <div class="items-border">
+                        <a href="product.html">
+                            <img class="new-item" src="img/new-item.svg" alt="">
+                            <span class="items-title">Цветы Сакуры маринованные, 500 г</span>   
+                        </a>
+                        <div class="items-price-container">
+                            <span class="items-price">5678 ₽</span>
+                        </div>
+                        <div class="item-buttons">
+                            <a href="" class="item__link-buy">В корзину</a>
+                            <a href="" class="item__link-favourite"><img src="img/favorite_after.png" alt=""></a>
+                        </div> 
+                    </div>
+                </li>
+                <li class="items">
+                    <div class="items-border">
+                        <a href="product.html">
+                            <img class="new-item" src="img/new-item.svg" alt="">
+                            <span class="items-title">Цветы Сакуры маринованные, 500 г</span>   
+                        </a>
+                        <div class="items-price-container">
+                            <span class="items-price">5678 ₽</span>
+                        </div>
+                        <div class="item-buttons">
+                            <a href="" class="item__link-buy">В корзину</a>
+                            <a href="" class="item__link-favourite"><img src="img/favorite_after.png" alt=""></a>
+                        </div> 
+                    </div>
+                </li>
+                <li class="items">
+                    <div class="items-border">
+                        <a href="product.html">
+                            <img class="new-item" src="img/new-item.svg" alt="">
+                            <span class="items-title">Цветы Сакуры маринованные, 500 г</span>   
+                        </a>
+                        <div class="items-price-container">
+                            <span class="items-price">5678 ₽</span>
+                        </div>
+                        <div class="item-buttons">
+                            <a href="" class="item__link-buy">В корзину</a>
+                            <a href="" class="item__link-favourite"><img src="img/favorite_after.png" alt=""></a>
+                        </div> 
+                    </div>
+                </li>
+                <li class="items">
+                    <div class="items-border">
+                        <a href="product.html">
+                            <img class="new-item" src="img/new-item.svg" alt="">
+                            <span class="items-title">Цветы Сакуры маринованные, 500 г</span>   
+                        </a>
+                        <div class="items-price-container">
+                            <span class="items-price">5678 ₽</span>
+                        </div>
+                        <div class="item-buttons">
+                            <a href="" class="item__link-buy">В корзину</a>
+                            <a href="" class="item__link-favourite"><img src="img/favorite_after.png" alt=""></a>
+                        </div> 
+                    </div>
+                </li>
+                <li class="items">
+                    <div class="items-border">
+                        <a href="product.html">
+                            <img class="new-item" src="img/new-item.svg" alt="">
+                            <span class="items-title">Цветы Сакуры маринованные, 500 г</span>   
+                        </a>
+                        <div class="items-price-container">
+                            <span class="items-price">5678 ₽</span>
+                        </div>
+                        <div class="item-buttons">
+                            <a href="" class="item__link-buy">В корзину</a>
+                            <a href="" class="item__link-favourite"><img src="img/favorite_after.png" alt=""></a>
+                        </div> 
+                    </div>
+                </li>
+            </ul>
+            <ul class="new">
+                <li class="items">
+                    <div class="items-border">
+                        <a href="product.html">
+                            <img class="new-item" src="img/new-item.svg" alt="">
+                            <span class="items-title">Цветы Сакуры маринованные, 500 г</span>   
+                        </a>
+                        <div class="items-price-container">
+                            <span class="items-price">5678 ₽</span>
+                        </div>
+                        <div class="item-buttons">
+                            <a href="" class="item__link-buy">В корзину</a>
+                            <a href="" class="item__link-favourite"><img src="img/favorite_after.png" alt=""></a>
+                        </div> 
+                    </div>
+                </li>
+                <li class="items">
+                    <div class="items-border">
+                        <a href="product.html">
+                            <img class="new-item" src="img/new-item.svg" alt="">
+                            <span class="items-title">Цветы Сакуры маринованные, 500 г</span>   
+                        </a>
+                        <div class="items-price-container">
+                            <span class="items-price">5678 ₽</span>
+                        </div>
+                        <div class="item-buttons">
+                            <a href="" class="item__link-buy">В корзину</a>
+                            <a href="" class="item__link-favourite"><img src="img/favorite_after.png" alt=""></a>
+                        </div> 
+                    </div>
+                </li>
+                <li class="items">
+                    <div class="items-border">
+                        <a href="product.html">
+                            <img class="new-item" src="img/new-item.svg" alt="">
+                            <span class="items-title">Цветы Сакуры маринованные, 500 г</span>   
+                        </a>
+                        <div class="items-price-container">
+                            <span class="items-price">5678 ₽</span>
+                        </div>
+                        <div class="item-buttons">
+                            <a href="" class="item__link-buy">В корзину</a>
+                            <a href="" class="item__link-favourite"><img src="img/favorite_after.png" alt=""></a>
+                        </div> 
+                    </div>
+                </li>
+                <li class="items">
+                    <div class="items-border">
+                        <a href="product.html">
+                            <img class="new-item" src="img/new-item.svg" alt="">
+                            <span class="items-title">Цветы Сакуры маринованные, 500 г</span>   
+                        </a>
+                        <div class="items-price-container">
+                            <span class="items-price">5678 ₽</span>
+                        </div>
+                        <div class="item-buttons">
+                            <a href="" class="item__link-buy">В корзину</a>
+                            <a href="" class="item__link-favourite"><img src="img/favorite_after.png" alt=""></a>
+                        </div> 
+                    </div>
+                </li>
+                <li class="items">
+                    <div class="items-border">
+                        <a href="product.html">
+                            <img class="new-item" src="img/new-item.svg" alt="">
+                            <span class="items-title">Цветы Сакуры маринованные, 500 г</span>   
+                        </a>
+                        <div class="items-price-container">
+                            <span class="items-price">5678 ₽</span>
+                        </div>
+                        <div class="item-buttons">
+                            <a href="" class="item__link-buy">В корзину</a>
+                            <a href="" class="item__link-favourite"><img src="img/favorite_after.png" alt=""></a>
+                        </div> 
+                    </div>
+                </li>
+            </ul>
+            <ul class="new">
+                <li class="items">
+                    <div class="items-border">
+                        <a href="product.html">
+                            <img class="new-item" src="img/new-item.svg" alt="">
+                            <span class="items-title">Цветы Сакуры маринованные, 500 г</span>   
+                        </a>
+                        <div class="items-price-container">
+                            <span class="items-price">5678 ₽</span>
+                        </div>
+                        <div class="item-buttons">
+                            <a href="" class="item__link-buy">В корзину</a>
+                            <a href="" class="item__link-favourite"><img src="img/favorite_after.png" alt=""></a>
+                        </div> 
+                    </div>
+                </li>
+                <li class="items">
+                    <div class="items-border">
+                        <a href="product.html">
+                            <img class="new-item" src="img/new-item.svg" alt="">
+                            <span class="items-title">Цветы Сакуры маринованные, 500 г</span>   
+                        </a>
+                        <div class="items-price-container">
+                            <span class="items-price">5678 ₽</span>
+                        </div>
+                        <div class="item-buttons">
+                            <a href="" class="item__link-buy">В корзину</a>
+                            <a href="" class="item__link-favourite"><img src="img/favorite_after.png" alt=""></a>
+                        </div> 
+                    </div>
+                </li>
+                <li class="items">
+                    <div class="items-border">
+                        <a href="product.html">
+                            <img class="new-item" src="img/new-item.svg" alt="">
+                            <span class="items-title">Цветы Сакуры маринованные, 500 г</span>   
+                        </a>
+                        <div class="items-price-container">
+                            <span class="items-price">5678 ₽</span>
+                        </div>
+                        <div class="item-buttons">
+                            <a href="" class="item__link-buy">В корзину</a>
+                            <a href="" class="item__link-favourite"><img src="img/favorite_after.png" alt=""></a>
+                        </div> 
+                    </div>
+                </li>
+                <li class="items">
+                    <div class="items-border">
+                        <a href="product.html">
+                            <img class="new-item" src="img/new-item.svg" alt="">
+                            <span class="items-title">Цветы Сакуры маринованные, 500 г</span>   
+                        </a>
+                        <div class="items-price-container">
+                            <span class="items-price">5678 ₽</span>
+                        </div>
+                        <div class="item-buttons">
+                            <a href="" class="item__link-buy">В корзину</a>
+                            <a href="" class="item__link-favourite"><img src="img/favorite_after.png" alt=""></a>
+                        </div> 
+                    </div>
+                </li>
+                <li class="items">
+                    <div class="items-border">
+                        <a href="product.html">
+                            <img class="new-item" src="img/new-item.svg" alt="">
+                            <span class="items-title">Цветы Сакуры маринованные, 500 г</span>   
+                        </a>
+                        <div class="items-price-container">
+                            <span class="items-price">5678 ₽</span>
+                        </div>
+                        <div class="item-buttons">
+                            <a href="" class="item__link-buy">В корзину</a>
+                            <a href="" class="item__link-favourite"><img src="img/favorite_after.png" alt=""></a>
+                        </div> 
+                    </div>
+                </li>
+            </ul>
+            <ul class="new-mobile">
+                <li class="items">
+                    <div class="items-border">
+                        <a href="product.html">
+                            <img class="new-item" src="img/new-item.svg" alt="">
+                            <span class="items-title">Цветы Сакуры маринованные, 500 г</span>   
+                        </a>
+                        <div class="items-price-container">
+                            <span class="items-price">5678 ₽</span>
+                        </div>
+                        <div class="item-buttons">
+                            <a href="" class="item__link-buy">В корзину</a>
+                            <a href="" class="item__link-favourite"><img src="img/favorite_after.png" alt=""></a>
+                        </div> 
+                    </div>
+                </li>
+                <li class="items">
+                    <div class="items-border">
+                        <a href="product.html">
+                            <img class="new-item" src="img/new-item.svg" alt="">
+                            <span class="items-title">Цветы Сакуры маринованные, 500 г</span>   
+                        </a>
+                        <div class="items-price-container">
+                            <span class="items-price">5678 ₽</span>
+                        </div>
+                        <div class="item-buttons">
+                            <a href="" class="item__link-buy">В корзину</a>
+                            <a href="" class="item__link-favourite"><img src="img/favorite_after.png" alt=""></a>
+                        </div> 
+                    </div>
+                </li>
+                <li class="items">
+                    <div class="items-border">
+                        <a href="product.html">
+                            <img class="new-item" src="img/new-item.svg" alt="">
+                            <span class="items-title">Цветы Сакуры маринованные, 500 г</span>   
+                        </a>
+                        <div class="items-price-container">
+                            <span class="items-price">5678 ₽</span>
+                        </div>
+                        <div class="item-buttons">
+                            <a href="" class="item__link-buy">В корзину</a>
+                            <a href="" class="item__link-favourite"><img src="img/favorite_after.png" alt=""></a>
+                        </div> 
+                    </div>
+                </li>
+                <li class="items">
+                    <div class="items-border">
+                        <a href="product.html">
+                            <img class="new-item" src="img/new-item.svg" alt="">
+                            <span class="items-title">Цветы Сакуры маринованные, 500 г</span>   
+                        </a>
+                        <div class="items-price-container">
+                            <span class="items-price">5678 ₽</span>
+                        </div>
+                        <div class="item-buttons">
+                            <a href="" class="item__link-buy">В корзину</a>
+                            <a href="" class="item__link-favourite"><img src="img/favorite_after.png" alt=""></a>
+                        </div> 
+                    </div>
+                </li>
+            </ul>
+            <ul class="new-mobile">
+                <li class="items">
+                    <div class="items-border">
+                        <a href="product.html">
+                            <img class="new-item" src="img/new-item.svg" alt="">
+                            <span class="items-title">Цветы Сакуры маринованные, 500 г</span>   
+                        </a>
+                        <div class="items-price-container">
+                            <span class="items-price">5678 ₽</span>
+                        </div>
+                        <div class="item-buttons">
+                            <a href="" class="item__link-buy">В корзину</a>
+                            <a href="" class="item__link-favourite"><img src="img/favorite_after.png" alt=""></a>
+                        </div> 
+                    </div>
+                </li>
+                <li class="items">
+                    <div class="items-border">
+                        <a href="product.html">
+                            <img class="new-item" src="img/new-item.svg" alt="">
+                            <span class="items-title">Цветы Сакуры маринованные, 500 г</span>   
+                        </a>
+                        <div class="items-price-container">
+                            <span class="items-price">5678 ₽</span>
+                        </div>
+                        <div class="item-buttons">
+                            <a href="" class="item__link-buy">В корзину</a>
+                            <a href="" class="item__link-favourite"><img src="img/favorite_after.png" alt=""></a>
+                        </div> 
+                    </div>
+                </li>
+                <li class="items">
+                    <div class="items-border">
+                        <a href="product.html">
+                            <img class="new-item" src="img/new-item.svg" alt="">
+                            <span class="items-title">Цветы Сакуры маринованные, 500 г</span>   
+                        </a>
+                        <div class="items-price-container">
+                            <span class="items-price">5678 ₽</span>
+                        </div>
+                        <div class="item-buttons">
+                            <a href="" class="item__link-buy">В корзину</a>
+                            <a href="" class="item__link-favourite"><img src="img/favorite_after.png" alt=""></a>
+                        </div> 
+                    </div>
+                </li>
+                <li class="items">
+                    <div class="items-border">
+                        <a href="product.html">
+                            <img class="new-item" src="img/new-item.svg" alt="">
+                            <span class="items-title">Цветы Сакуры маринованные, 500 г</span>   
+                        </a>
+                        <div class="items-price-container">
+                            <span class="items-price">5678 ₽</span>
+                        </div>
+                        <div class="item-buttons">
+                            <a href="" class="item__link-buy">В корзину</a>
+                            <a href="" class="item__link-favourite"><img src="img/favorite_after.png" alt=""></a>
+                        </div> 
+                    </div>
+                </li>
+            </ul>
+            <ul class="new-mobile">
+                <li class="items">
+                    <div class="items-border">
+                        <a href="product.html">
+                            <img class="new-item" src="img/new-item.svg" alt="">
+                            <span class="items-title">Цветы Сакуры маринованные, 500 г</span>   
+                        </a>
+                        <div class="items-price-container">
+                            <span class="items-price">5678 ₽</span>
+                        </div>
+                        <div class="item-buttons">
+                            <a href="" class="item__link-buy">В корзину</a>
+                            <a href="" class="item__link-favourite"><img src="img/favorite_after.png" alt=""></a>
+                        </div> 
+                    </div>
+                </li>
+                <li class="items">
+                    <div class="items-border">
+                        <a href="product.html">
+                            <img class="new-item" src="img/new-item.svg" alt="">
+                            <span class="items-title">Цветы Сакуры маринованные, 500 г</span>   
+                        </a>
+                        <div class="items-price-container">
+                            <span class="items-price">5678 ₽</span>
+                        </div>
+                        <div class="item-buttons">
+                            <a href="" class="item__link-buy">В корзину</a>
+                            <a href="" class="item__link-favourite"><img src="img/favorite_after.png" alt=""></a>
+                        </div> 
+                    </div>
+                </li>
+                <li class="items">
+                    <div class="items-border">
+                        <a href="product.html">
+                            <img class="new-item" src="img/new-item.svg" alt="">
+                            <span class="items-title">Цветы Сакуры маринованные, 500 г</span>   
+                        </a>
+                        <div class="items-price-container">
+                            <span class="items-price">5678 ₽</span>
+                        </div>
+                        <div class="item-buttons">
+                            <a href="" class="item__link-buy">В корзину</a>
+                            <a href="" class="item__link-favourite"><img src="img/favorite_after.png" alt=""></a>
+                        </div> 
+                    </div>
+                </li>
+                <li class="items">
+                    <div class="items-border">
+                        <a href="product.html">
+                            <img class="new-item" src="img/new-item.svg" alt="">
+                            <span class="items-title">Цветы Сакуры маринованные, 500 г</span>   
+                        </a>
+                        <div class="items-price-container">
+                            <span class="items-price">5678 ₽</span>
+                        </div>
+                        <div class="item-buttons">
+                            <a href="" class="item__link-buy">В корзину</a>
+                            <a href="" class="item__link-favourite"><img src="img/favorite_after.png" alt=""></a>
+                        </div> 
+                    </div>
+                </li>
+            </ul>
+            <ul class="new-mobile">
+                <li class="items">
+                    <div class="items-border">
+                        <a href="product.html">
+                            <img class="new-item" src="img/new-item.svg" alt="">
+                            <span class="items-title">Цветы Сакуры маринованные, 500 г</span>   
+                        </a>
+                        <div class="items-price-container">
+                            <span class="items-price">5678 ₽</span>
+                        </div>
+                        <div class="item-buttons">
+                            <a href="" class="item__link-buy">В корзину</a>
+                            <a href="" class="item__link-favourite"><img src="img/favorite_after.png" alt=""></a>
+                        </div> 
+                    </div>
+                </li>
+                <li class="items">
+                    <div class="items-border">
+                        <a href="product.html">
+                            <img class="new-item" src="img/new-item.svg" alt="">
+                            <span class="items-title">Цветы Сакуры маринованные, 500 г</span>   
+                        </a>
+                        <div class="items-price-container">
+                            <span class="items-price">5678 ₽</span>
+                        </div>
+                        <div class="item-buttons">
+                            <a href="" class="item__link-buy">В корзину</a>
+                            <a href="" class="item__link-favourite"><img src="img/favorite_after.png" alt=""></a>
+                        </div> 
+                    </div>
+                </li>
+                <li class="items">
+                    <div class="items-border">
+                        <a href="product.html">
+                            <img class="new-item" src="img/new-item.svg" alt="">
+                            <span class="items-title">Цветы Сакуры маринованные, 500 г</span>   
+                        </a>
+                        <div class="items-price-container">
+                            <span class="items-price">5678 ₽</span>
+                        </div>
+                        <div class="item-buttons">
+                            <a href="" class="item__link-buy">В корзину</a>
+                            <a href="" class="item__link-favourite"><img src="img/favorite_after.png" alt=""></a>
+                        </div> 
+                    </div>
+                </li>
+                <li class="items">
+                    <div class="items-border">
+                        <a href="product.html">
+                            <img class="new-item" src="img/new-item.svg" alt="">
+                            <span class="items-title">Цветы Сакуры маринованные, 500 г</span>   
+                        </a>
+                        <div class="items-price-container">
+                            <span class="items-price">5678 ₽</span>
+                        </div>
+                        <div class="item-buttons">
+                            <a href="" class="item__link-buy">В корзину</a>
+                            <a href="" class="item__link-favourite"><img src="img/favorite_after.png" alt=""></a>
+                        </div> 
+                    </div>
+                </li>
+            </ul>
+            <div class="page-select">
+                <a href=""><img src="img/slider-arrow-left.svg" alt=""></a>
+                <span class="page-number">1</span>
+                <a href=""><img src="img/slider-arrow-right.svg" alt=""></a>
+            </div>
+        </div>
+    </section>
+    <footer>
+    <div class="footer">
+        <div class="container">
+            <div class="footer__logo">
+                <img class="footer__logo-pic" src="img/sakura_logo.svg" alt="">
+            </div>
+            <div class="footer__info">
+                <div class="footer__info-contacts">
+                    <span class="contacts">Контакты</span>
+                    <span class="phone">+ 7 900 322 56 78</span>
+                    <span class="mail">sakura-shop@gmail.com</span>
+                </div>
+            <div class="footer__info-shops">
+                <span class="shops">Наши магазины</span>
+                <span class="adress">Набережная реки Смоленки, 1</span>
+            </div>
+            <div class="footer__info-socials">
+                <span class="socials">Социальные сети</span>
+                <div class="footer__info-socials-icons">
+                    <a href="" class="footer__info_socials-icon"><img src="img/tg.svg" alt="" class="tg"></a>
+                    <a href="" class="footer__info_socials-icon"><img src="img/inst.svg" alt="" class="inst"></a>
+                    <a href="" class="footer__info_socials-icon"><img src="img/vk.svg" alt="" class="vk"></a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    </footer>
+    <div id="openModal" class="modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title">Корзина</h3>
+              <a href="#close" title="Close" class="close">×</a>
+            </div>
+            <div class="modal-body">    
+              <div class="cart-item">
+                <img class="cart-item-pic" src="img/new-item.svg" alt="">
+                <div class="cart-item-title">
+                    <span class="cart-item-span">Цветы Сакуры маринованные, 500г</span>
+                </div>
+                <div class="cart-amount-container">
+                    <a class="cart-amount" href="">-</a>
+                    <span class="cart-amount-number">1</span>
+                    <a class="cart-amount" href="">+</a>
+                </div>
+                <span class="cart-item-price">5678 ₽</span>
+                <a href="" class="cart-item-delete"><img class="cart-delete-icon" src="img/trash-can.png" alt=""></a>
+              </div>
+              <div class="cart-item">
+                <img class="cart-item-pic" src="img/new-item.svg" alt="">
+                <div class="cart-item-title">
+                    <span class="cart-item-span">Цветы Сакуры маринованные, 500г</span>
+                </div>
+                <div class="cart-amount-container">
+                    <a class="cart-amount" href="">-</a>
+                    <span class="cart-amount-number">1</span>
+                    <a class="cart-amount" href="">+</a>
+                </div>
+                <span class="cart-item-price">5678 ₽</span>
+                <a href="" class="cart-item-delete"><img class="cart-delete-icon" src="img/trash-can.png" alt=""></a>
+              </div>
+              <div class="cart-total-price">
+                <span>Сумма:</span>
+                <span class="total-price">11356 ₽</span>
+              </div>
+              <div class="cart-placeholder-name">
+                <span class="cart-name">Имя</span>
+                <input class="input-name" type="text">
+              </div>
+              <div class="cart-placeholder-mail">
+                <span class="cart-mail">E-mail</span>
+                <input class="input-mail" type="text">
+              </div>
+              <div class="cart-placeholder-number">
+                <span class="cart-number">Номер телефона</span>
+                <input class="input-number" type="text">
+              </div>
+              <div class="cart-placeholder-address">
+                <span class="cart-address">Адрес доставки</span>
+                <input class="input-address" type="text">
+              </div>
+              <div class="cart-placeholder-comments">
+                <span class="cart-comments">Комментарии к заказу</span>
+                <textarea class="input-comments" cols="30" rows="10"></textarea>
+              </div>
+              <div class="cart-order-button">
+                <a class="cart-order-button-link" href="">Сделать заказ</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
